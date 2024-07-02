@@ -1,7 +1,7 @@
 var handler = async (m) => {
 
 global.db.data.chats[m.chat].isBanned = false
-conn.reply(m.chat, '✅ *Este chat fue desbaneado con éxito*', m, fake, )
+conn.reply(m.chat, '✅ *Este chat fue desbaneado con éxito, ahora puedes usar a BaileyBot-MD.*', m, fake, )
 
 }
 handler.help = ['unbanchat']
