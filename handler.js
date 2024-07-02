@@ -603,16 +603,16 @@ console.error(e)
 global.dfail = (type, m, conn) => {
 
 let msg = {
- rowner: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥱs𝗍ᥱ ᥴ᥆mᥲᥒძ᥆ s᥆ᥣ᥆ mі ძᥱsᥲrr᥆ᥣᥣᥲძ᥆r ᥣ᥆ ⍴ᥙᥱძᥱ ᥙsᥲr*', 
- owner: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥱs𝗍ᥱ ᥴ᥆mᥲᥒძ᥆ s᥆ᥣ᥆ mі ⍴r᥆⍴іᥱ𝗍ᥲrі᥆ ᥣ᥆ ⍴ᥙᥱძᥱ ᥙsᥲr*', 
- mods: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥱs𝗍ᥲ 𝖿ᥙᥒᥴі᥆́ᥒ s᥆ᥣ᥆ ᥱs ⍴ᥲrᥲ mіs m᥆ძᥱrᥲძ᥆rᥱs*', 
- premium: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥱs𝗍ᥲ 𝖿ᥙᥒᥴі᥆́ᥒ s᥆ᥣ᥆ ES ⍴ᥲrᥲ ᥙsᥙᥲrі᥆s ⍴rᥱmіᥙm*', 
- group:  '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥣᥲ 𝖿ᥙᥒᥴі᥆́ᥒ s᥆ᥣ᥆ ⍴ᥙᥱძᥱ sᥱr ᥱȷᥱᥴᥙ𝗍ᥲძᥲ ᥱᥒ grᥙ⍴᥆s*', 
- private: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥱs𝗍ᥲ 𝖿ᥙᥒᥴі᥆ᥒᥴs᥆ᥣ᥆ ⍴ᥙᥱძᥱ sᥱr ᥙsᥲძᥲ ᥱᥒ ᥱᥣ ᥴһᥲ𝗍 ⍴rі᥎ᥲძ᥆*', 
- admin: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥱs𝗍ᥱ ᥴ᥆mᥲᥒძ᥆ s᥆ᥣ᥆ ⍴ᥙᥱძᥱ sᥱr ᥙsᥲძ᥆ ⍴᥆r ADMINS*', 
- botAdmin: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *⍴ᥲrᥲ ᥙsᥲr ᥱs𝗍ᥲ 𝖿ᥙᥒᥴі᥆́ᥒ ძᥱᑲ᥆ sᥱr ᥲძmіᥒ*', 
- unreg: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *һᥱᥡ! ᥲᥣ𝗍᥆ ᥲһі ᥒ᥆ ᥱs𝗍ᥲs rᥱgіs𝗍rᥲძ᥆, rᥱgі́s𝗍rᥱsᥱ ⍴ᥲrᥲ ᥙsᥲr ᥱs𝗍ᥲ 𝖿ᥙᥒᥴі᥆́ᥒ ᥱsᥴrіᑲіᥱᥒძ᥆:*\n\n• */reg nombre.edad*\n\n*_❕ Ejemplo_* : */reg Ax.25*',
-restrict: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥱs𝗍ᥲ ᥴᥲrᥲᥴ𝗍ᥱrі́s𝗍іᥴᥲ ᥱs𝗍ᥲ ძᥱsᥲᥴ𝗍і᥎ᥲძᥲ*' 
+ rowner: '「👑」 *Esta función solo puede ser usada por mi creador\n\n> Jxtxn17.*', 
+ owner: 「👑」 *Esta función solo puede ser usada por mi desarrollador.', 
+ mods: '「👑」 *Esta función solo puede ser usada por mis desarrolladores.*', 
+ premium: '「👑」 *Esta función solo es para usuarios Premium.', 
+ group:  '「👑」 *Esta funcion solo puede ser ejecutada en grupos.*', 
+ private: '「👑」 *Esta función solo puede ser usada en chat privado.*', 
+ admin: 」👑」 *Este comando solo puede ser usado por admins.*', 
+ botAdmin: '👑」 *Para usar esta función debo ser admin.*', 
+ unreg: '」👑」 *¡Hey! no estas registrado, registrese para usar esta función /reg nombre.edad*\n\n*_❕ Ejemplo_* : */reg Ax.25*',
+restrict: '「👑」 *Esta característica esta desactivada.*' 
 }[type]
 if (msg) return conn.reply(m.chat, msg, m, { contextInfo:{ externalAdReply: {title: ' ' + saludo + ' ' + nombre , body: dev, sourceUrl: global.channel, thumbnailUrl: ImgAll.getRandom() }}})
 
