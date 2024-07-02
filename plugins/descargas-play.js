@@ -1,10 +1,10 @@
-/*import yts from 'yt-search'
+import yts from 'yt-search'
 let handler = async (m, { conn, command, text, usedPrefix }) => {
 
-        if (!text) throw `🚫 𝐄𝐑𝐑𝐎𝐑 🚫 іᥒgrᥱsᥲ ᥱᥣ 𝗍і́𝗍ᥙᥣ᥆ ძᥱ ᥙᥒᥲ ᥴᥲᥒᥴі᥆́ᥒ\n\n[ 📌 ] ᥱȷᥱm⍴ᥣ᥆ *${usedPrefix + command}* Lil Peep hate my life`
+        if (!text) throw `🍥 *Ingresa el título de una canción*\n\n[ 📌 ] Ejemplo *${usedPrefix + command}* Lil Peep hate my life`
         let res = await yts(text)
         let vid = res.videos[0]
-        if (!vid) throw `🚫 𝐀𝐓𝐄𝐍𝐂𝐈𝐎𝐍 🚫 ᥎і́ძᥱ᥆/ᥲᥙძі᥆ ᥒ᥆ ᥱᥒᥴ᥆ᥒ𝗍rᥲძ᥆`
+        if (!vid) throw `🍫 *Vídeo/Audio no encontrado`
         let { title, description, thumbnail, videoId, timestamp, views, ago, url } = vid
         //const url = 'https://www.youtube.com/watch?v=' + videoId
         m.react('🎧')
@@ -18,8 +18,8 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
  👀 *Vistas:* ${views}
 ┗━━━━━━━━━━━━━━━━━━━`
  await conn.sendButton(m.chat, play, fgig, thumbnail, [
-    ['🍧 MP3', `${usedPrefix}fgmp3 ${url}`],
-    ['🍿 MP4', `${usedPrefix}fgmp4 ${url}`]
+    ['📀 Audio', `${usedPrefix}fgmp3 ${url}`],
+    ['🎥 Video', `${usedPrefix}fgmp4 ${url}`]
   ], m)
 }
 handler.help = ['bot']
@@ -27,11 +27,11 @@ handler.tags = ['descargas']
 handler.command = ['play', 'playqq']
 //handler.disabled = true
 
-export default handler*/
+export default handler
 
 //PLAY NORMAL
 
-import fetch from 'node-fetch'
+/*import fetch from 'node-fetch'
 import yts from 'yt-search'
 import ytdl from 'ytdl-core'
 import axios from 'axios'
@@ -246,4 +246,4 @@ let url = []
 for (let i = 0; i < result.length; i++) { url.push(result[i].url) }
 let random = url[0]
 let getVideo = await ytMp4(random)
-resolve(getVideo)}).catch(reject)})}
+resolve(getVideo)}).catch(reject)})}*/
