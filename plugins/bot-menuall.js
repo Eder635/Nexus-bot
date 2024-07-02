@@ -170,9 +170,19 @@ await conn.reply(m.chat, '✰【𝐄𝐧𝐯𝐢𝐚𝐧𝐝𝐨 𝐄𝐥 𝐌�
     
     let pp1 = 'https://telegra.ph/file/56c0806bcba5406a4844b.mp4'
     let pp2 = 'https://telegra.ph/file/1280f3f0e69467d2d34c6.mp4'
-
-    m.react('🪷') 
+   
+ m.react('🪷') 
     conn.sendMessage(m.chat, { video: { url: [pp1, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m }) 
+
+let listSections = []    
+listSections.push({
+title: '',
+rows: [{ header: "Menu Completo", title: "", id: `.allmenu`, description: `Para ver todos los comandos\n` }, { header: "Sub-bot", title: "", id: `.jadibot --code`, description: `Para volverte sub-bot 🤖\n` },
+{ header: "Velocidad", title: "", id: `.ping`, description: `Ver velocidad del bot\n` },
+{ header: "Play", title: "", id: `.play`, description: `Descarga tus musicas favoritas 🎧\n` },
+{ header: "creador", title: "", id: `.owner`, description: `Contacta a mi creador` }
+]})
+await conn.sendList(m.chat, '👋🏻 Hola¡! Bienvenido A Mi Sub Menú\n\n*Creador:* Jxtxn17\n*Versión:* ${vs}\n\n si hay algún error puedes contactarme, usa el comando: .owner\n\nGracias¡! 🔴', null, `Selecione la opción correcta`, listSections, { mentions: [m.sender]}, {quoted: m})
 
   } catch (e) { 
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error.', m, fake, ) 
