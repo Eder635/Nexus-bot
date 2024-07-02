@@ -41,7 +41,7 @@ rows: [{ header: "Menu Completo", title: "", id: `.allmenu`, description: `Para 
 { header: "Play", title: "", id: `.play`, description: `Descarga tus musicas favoritas 🎧\n` },
 { header: "creador", title: "", id: `.owner`, description: `Contacta a mi creador` }
 ]})
-await conn.sendList(m.chat, '👋🏻 Hola ${user} Bienvenido A Mi Sub Menú\n\n*Creador:* Jxtxn17\n*Versión:* 1.0.0\n*Pais:* ${formatDate}\n\n si hay algún error puedes contactarme, usa el comando: .owner\n\nGracias¡! 🔴', null, `Selecione la opción correcta`, listSections, { mentions: [m.sender]}, {quoted: m})
+await conn.sendList(m.chat, '👋🏻 Hola, Bienvenido A Mi Sub Menú\n\n*Creador:* Jxtxn17\n*Versión:* 1.0.0\n\n si hay algún error puedes contactarme, usa el comando: .owner\n\nGracias¡! 🔴', null, `Selecione la opción correcta`, listSections, { mentions: [m.sender]}, {quoted: m})
 
 //await conn.reply(m.chat, menu, a, { contextInfo: { externalAdReply: {title: '👋 ¡Hola!', body: saludo, sourceUrl: ig, thumbnail: await (await fetch(pp)).buffer() }}})
 
