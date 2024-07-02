@@ -609,9 +609,9 @@ let msg = {
  premium: '「👑」 *Esta función solo es para usuarios Premium.', 
  group:  '「👑」 *Esta funcion solo puede ser ejecutada en grupos.*', 
  private: '「👑」 *Esta función solo puede ser usada en chat privado.*', 
- admin: 」👑」 *Este comando solo puede ser usado por admins.*', 
+ admin: '「👑」 *Este comando solo puede ser usado por admins.*', 
  botAdmin: '👑」 *Para usar esta función debo ser admin.*', 
- unreg: '」👑」 *¡Hey! no estas registrado, registrese para usar esta función /reg nombre.edad*\n\n*_❕ Ejemplo_* : */reg Ax.25*',
+ unreg: '「👑」 *¡Hey! no estas registrado, registrese para usar esta función /reg nombre.edad*\n\n*_❕ Ejemplo_* : */reg Ax.25*',
 restrict: '「👑」 *Esta característica esta desactivada.*' 
 }[type]
 if (msg) return conn.reply(m.chat, msg, m, { contextInfo:{ externalAdReply: {title: ' ' + saludo + ' ' + nombre , body: dev, sourceUrl: global.channel, thumbnailUrl: ImgAll.getRandom() }}})
