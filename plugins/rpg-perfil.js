@@ -19,7 +19,7 @@ let str = `P E R F I L 🔰
 🎨 • *Edad:* ${registered ? age : ''}
 💎 • *Limite: ${diamond} Usos* 
 📑 • *Registrado:* ${registered ? '✅': '❌'}
-🌟 • *Premium:* ${premium ? '✅': '❌'}
+👑 • *Premium:* ${premium ? '✅': '❌'}
 `.trim()
 
 conn.sendFile(m.chat, pp, 'perfil.jpg', str, fkon, false, { mentions: [who] })
