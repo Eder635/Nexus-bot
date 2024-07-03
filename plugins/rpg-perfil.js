@@ -27,7 +27,7 @@ conn.sendFile(m.chat, pp, 'perfil.jpg', str, fkon, false, { mentions: [who] })
 }
 handler.help = ['profile']
 handler.tags = ['rg']
-handler.command = /^perfil|pp$/i
+handler.command = /^perfil|ppp$/i
 
 export default handler
 
