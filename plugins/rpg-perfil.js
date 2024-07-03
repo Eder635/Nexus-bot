@@ -1,4 +1,4 @@
-import PhoneNumber from 'awesome-phonenumber'
+/*import PhoneNumber from 'awesome-phonenumber'
 import fetch from 'node-fetch'
 var handler = async (m, { conn }) => {
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
@@ -38,10 +38,10 @@ handler.register = true
 //handler.group = true
 handler.tags = ['rg']
 handler.command = ['profile', 'perfil']
-export default handler
+export default handler*/
 
 
-/*import PhoneNumber from 'awesome-phonenumber'
+import PhoneNumber from 'awesome-phonenumber'
 import fetch from 'node-fetch'
 
 var handler = async (m, { conn }) => {
@@ -83,4 +83,4 @@ let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
 let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
 let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
 return [d, ' *Dias ☀️*\n ', h, ' *Horas 🕐*\n ', m, ' *Minutos ⏰*\n ', s, ' *Segundos ⏱️* '].map(v => v.toString().padStart(2, 0)).join('')
-}*/
+}
