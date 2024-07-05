@@ -23,7 +23,7 @@ throw `*❗ Formato erróneo*\n\n [ 💡 ] Ejemplo:
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━
 `.trim()
 }
-//await conn.groupSettingUpdate(m.chat, isClose)
+await conn.groupSettingUpdate(m.chat, isClose)
 {m.reply('*「👑」Configurado correctamente.*')}
 
 }
