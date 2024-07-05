@@ -11,7 +11,7 @@ const isClose = {
 'bloquear': 'locked',
 }[(args[0] || '')];
 if (isClose === undefined) {
-throw `*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 𝖿᥆rmᥲ𝗍᥆ ᥱrr᥆́ᥒᥱ᥆*\n\n [ 💡 ] ᥱȷᥱm⍴ᥣ᥆:
+throw `*❗ Formato erróneo*\n\n [ 💡 ] Ejemplo:
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━
 ┃ *○ ${usedPrefix + command} abrir*
 
@@ -24,7 +24,7 @@ throw `*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 𝖿᥆rmᥲ𝗍᥆ ᥱrr᥆́ᥒᥱ᥆*\
 `.trim()
 }
 await conn.groupSettingUpdate(m.chat, isClose)
-{m.reply('*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 grᥙ⍴᥆ ᥴᥱrrᥲძ᥆, s᥆ᥣ᥆ ᥲძmіᥒs ⍴ᥙᥱძᥱᥒ ᥱsᥴrіᑲіr.*')}
+{m.reply('*「👑」Grupo cerrado, ahora sólo admins' pueden escribir.*')}
 
 }
 handler.help = ['group open / close', 'grupo abrir / cerrar']
