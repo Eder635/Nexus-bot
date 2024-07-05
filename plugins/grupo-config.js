@@ -1,6 +1,6 @@
 var handler = async (m, {conn, args, usedPrefix, command}) => {
 
-//const isClose = {
+/*const isClose = {
 'open': 'not_announcement',
 'close': 'announcement',
 'abierto': 'not_announcement',
@@ -8,7 +8,7 @@ var handler = async (m, {conn, args, usedPrefix, command}) => {
 'abrir': 'not_announcement',
 'cerrar': 'announcement',
 'desbloquear': 'unlocked',
-'bloquear': 'locked',
+'bloquear': 'locked',*/
 }[(args[0] || '')];
 if (isClose === undefined) {
 throw `*❗ Formato erróneo*\n\n [ 💡 ] Ejemplo:
