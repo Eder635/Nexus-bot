@@ -21,7 +21,7 @@ conn.sendMessage(m.chat, { text: `🎌 *Marcar el chat como leido*\n${"\n".repea
 setTimeout(() => { 
 conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 }, 1000)
-} else if (!bot.restrict) return m.reply(`*¡Esta característica está desactivada!*`)
+} else if (!bot.restrict) return m.reply(`*「👑」¡Esta característica está desactivada!*`)
 
 }
 return !0
