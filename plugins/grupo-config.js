@@ -1,6 +1,6 @@
 var handler = async (m, {conn, args, usedPrefix, command}) => {
 
-const isClose = {
+//const isClose = {
 'open': 'not_announcement',
 'close': 'announcement',
 'abierto': 'not_announcement',
@@ -24,7 +24,7 @@ throw `*❗ Formato erróneo*\n\n [ 💡 ] Ejemplo:
 `.trim()
 }
 await conn.groupSettingUpdate(m.chat, isClose)
-{m.reply('*「👑」Grupo cerrado, ahora sólo admins pueden escribir.*')}
+{m.reply('*「👑」Configurado correctamente.*')}
 
 }
 handler.help = ['group open / close', 'grupo abrir / cerrar']
