@@ -3,12 +3,12 @@ let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 let handler = async function (m, { conn, text, usedPrefix, command }) {
   let user = global.db.data.users[m.sender]
   let name2 = conn.getName(m.sender)
-  if (user.registered === true) throw `「👑」*Ya* *estas* *registrado*\n\n◉ 🍟 ¿Quiere volver a registrarse?\n\n◉ 🍭 Para volver a registrarse *elimine su registro* haciendo uso del comando\n*${usedPrefix}unreg*`
-  if (!Reg.test(text)) throw `「👑」*Formato incorrecto*\n\n*${usedPrefix + command} nombre.edad*\n\n [ 💡 ] Ejemplo : *${usedPrefix + command}* ${name2}.18`
+  if (user.registered === true) throw `「👑」 *Ya estas registrado*\n\n◉ 🍟 ¿Quiere volver a registrarse?\n\n◉ 🍭 Para volver a registrarse *elimine su registro* haciendo uso del comando\n*${usedPrefix}unreg*`
+  if (!Reg.test(text)) throw `「👑」 *Formato incorrecto*\n\n*${usedPrefix + command} nombre.edad*\n\n [ 💡 ] Ejemplo : *${usedPrefix + command}* ${name2}.18`
   let [_, name, splitter, age] = text.match(Reg)
-  if (!name) throw '「👑」*El nombre no puede estar vacio*'
+  if (!name) throw '「👑」 *El nombre no puede estar vacio*'
   if (!age) throw '「👑」 *La edad no puede estar vacía*'
-  if (name.length >= 30) throw '*「👑」*El nombre es demasiado largo*' 
+  if (name.length >= 30) throw '*「👑」 *El nombre es demasiado largo*' 
   age = parseInt(age)
   if (age > 100) throw '*Pellé quiere jugar con el bot?*'
   if (age < 5) throw '*Eres menor no  puedes registrarte en BaileyBot-MD*'
