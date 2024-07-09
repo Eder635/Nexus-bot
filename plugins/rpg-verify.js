@@ -20,8 +20,8 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   global.db.data.users[m.sender].limit += 20
   global.db.data.users[m.sender].exp += 500
   global.db.data.users[m.sender].joincount += 100
-  let sn = createHash('md5').update(m.sender).digest('hex')
-  m.reply(`
+ let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 6)        
+let register =
 👤 𝗥 𝗘 𝗚 𝗜 𝗦 𝗧 𝗥 𝗢 👤
 •┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
 『💭』𝗡𝗼𝗺𝗯𝗿𝗲: ${name}
@@ -35,7 +35,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
 •┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
 `
 conn.sendMessage(m.chat, {
-text: sn,
+text: register,
 contextInfo: {
 externalAdReply: {
 title: '⊱『✅𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥✅』⊰',
