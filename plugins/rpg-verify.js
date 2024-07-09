@@ -47,8 +47,6 @@ showAdAttribution: true,
 renderLargerThumbnail: true,
 }}}, { quoted: fkontak })`)        
 }
-
-}
 handler.help = ['reg'].map(v => v + ' <nombre.edad>')
 handler.tags = ['rg']
 
