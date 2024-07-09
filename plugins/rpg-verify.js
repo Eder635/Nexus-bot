@@ -33,9 +33,9 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
 • 500 Experiencia 💸
 • 13 Tokens 💰
 •┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
-`.trim())
+`
 conn.sendMessage(m.chat, {
-text: regbot,
+text: sn,
 contextInfo: {
 externalAdReply: {
 title: '⊱『✅𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥✅』⊰',
