@@ -2,7 +2,7 @@ import PhoneNumber from 'awesome-phonenumber'
 import fetch from 'node-fetch'
 var handler = async (m, { conn }) => {
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-let pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/7d39cc145b449ba2ad375.jpg')
+let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
 let { premium, level, diamond, exp, lastclaim, registered, regTime, age } = global.db.data.users[m.sender]
 let username = conn.getName(who)
 let str = `P E R F I L 🔰
@@ -16,7 +16,7 @@ let str = `P E R F I L 🔰
 👑 • *Premium:* ${premium ? '✅': '❌'}
 `.trim()
 
-conn.sendFile(m.chat, pp, 'perfil.jpg', str, fkon, false, { mentions: [who] })
+conn.sendFile(m.chat, pp, 'perfil.jpg', str, false, { mentions: [who] })
 
 }
 handler.help = ['profile']
