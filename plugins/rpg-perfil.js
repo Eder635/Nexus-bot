@@ -1,11 +1,10 @@
-/*import PhoneNumber from 'awesome-phonenumber'
+import PhoneNumber from 'awesome-phonenumber'
 import fetch from 'node-fetch'
 var handler = async (m, { conn }) => {
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/7d39cc145b449ba2ad375.jpg')
 let { premium, level, estrellas, exp, lastclaim, registered, regTime, age, role } = global.db.data.users[m.sender]
 let username = conn.getName(who)
-let str = `
 let str = `P E R F I L 🔰
 💌 • *Nombre:* ${username} 
 📧 • *Tag:* @${who.replace(/@.+/, '')}
@@ -26,7 +25,7 @@ handler.register = true
 handler.tags = ['rg']
 handler.command = ['profile', 'perfil']
 
-export default handler*/
+export default handler
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
@@ -40,7 +39,7 @@ return [d, ' *Dias ☀️*\n ', h, ' *Horas 🕐*\n ', m, ' *Minutos ⏰*\n ', s
 }
 
 
-import PhoneNumber from 'awesome-phonenumber'
+/*import PhoneNumber from 'awesome-phonenumber'
 import fetch from 'node-fetch'
 
 var handler = async (m, { conn }) => {
@@ -82,4 +81,4 @@ let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
 let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
 let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
 return [d, ' *Dias ☀️*\n ', h, ' *Horas 🕐*\n ', m, ' *Minutos ⏰*\n ', s, ' *Segundos ⏱️* '].map(v => v.toString().padStart(2, 0)).join('')
-}
+}*/
