@@ -34,6 +34,20 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
 • 13 Tokens 💰
 •┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
 `.trim())
+conn.sendMessage(m.chat, {
+text: regbot,
+contextInfo: {
+externalAdReply: {
+title: '⊱『✅𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥✅』⊰',
+body: wm, 
+thumbnaiUrl: icons, 
+sourceUrl: canales,
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true,
+}}}, { quoted: fkontak })`)        
+}
+
 }
 handler.help = ['reg'].map(v => v + ' <nombre.edad>')
 handler.tags = ['rg']
