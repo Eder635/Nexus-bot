@@ -20,36 +20,36 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   global.db.data.users[m.sender].limit += 20
   global.db.data.users[m.sender].exp += 500
   global.db.data.users[m.sender].joincount += 100
- let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 6)        
-let register =`
-👤 𝗥 𝗘 𝗚 𝗜 𝗦 𝗧 𝗥 𝗢 👤
+ let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 6)    
+m.react('📩') 
+let regbot = `👤 𝗥 𝗘 𝗚 𝗜 𝗦 𝗧 𝗥 𝗢 👤
 •┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
-『💭』𝗡𝗼𝗺𝗯𝗿𝗲: ${name}
-『✨️』𝗘𝗱𝗮𝗱: ${age} años
+「💭」𝗡𝗼𝗺𝗯𝗿𝗲: ${name}
+「✨️」𝗘𝗱𝗮𝗱: ${age} años
 •┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
-『🎁』𝗥𝗲𝗰𝗼𝗺𝗽𝗲𝗻𝘀𝗮𝘀:
-• 20 Centavos 🪙
-• 100 Coins 🌟
-• 500 Experiencia 💸
-• 13 Tokens 💰
+「🎁」𝗥𝗲𝗰𝗼𝗺𝗽𝗲𝗻𝘀𝗮𝘀:
+• 10 Estrellas 🌟
+• 5 Coins 🪙
+• 245 Experiencia 💸
+• 12 Tokens 💰
 •┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
-`
+${packname}`
 conn.sendMessage(m.chat, {
-text: register,
+text: regbot,
 contextInfo: {
 externalAdReply: {
 title: '⊱『✅𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥✅』⊰',
 body: wm, 
-thumbnaiUrl: icons, 
-sourceUrl: canales,
+thumbnaiUrl: md, 
+sourceUrl: channel,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true,
-}}}, { quoted: fkontak })`)        
+}}}, { quoted: fkontak })
+//await m.reply(`${sn}`)        
 }
-handler.help = ['reg'].map(v => v + ' <nombre.edad>')
+handler.help = ['reg']
 handler.tags = ['rg']
-
 handler.command = ['verify', 'verificar', 'reg', 'register', 'registrar'] 
 
 export default handler
