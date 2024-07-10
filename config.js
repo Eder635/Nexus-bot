@@ -3,7 +3,7 @@ import chalk from 'chalk'
 import { fileURLToPath, pathToFileURL } from 'url'
 
  global.owner = [
-['51929972576', '🍧𝙹𝚇𝚃𝚇𝙽¹⁷🍧', true],
+['573027866596', '🍧Eder.js🍧', true],
 ['524434703586', 'Zamm', true]]
 
 //BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces:
@@ -18,12 +18,12 @@ global.prems = []
 //Solo desarrolladores aprobados
 global.isdev = [ /* ['5217294888993'], */ ['5214434703586'], ['5492266466080'], ['5492266613038'], ['573012482597'], ['5215610314499'], ['51935531943'], ['33760536110'], ['5492964650915'], ['50558124470'], ['573012482597']]
 
-global.packname = 'ᥫ᭡𝘽𝙖𝙞𝙡𝙚𝙮𝘽𝙤𝙩-𝙈𝘿ꨄ'
-global.author = 'Jxtxn17'
-global.wm = '𓆩𝐁𝐚𝐢𝐥𝐞𝐲𝐁𝐨𝐭-𝐌𝐃𓆪'
-global.wm2 = '✦𝘽𝙖𝙞𝙡𝙚𝙮-𝗯𝗼𝘁-𝗠𝗗✦'
-global.jxtxn = 'Jxtxn'
-global.cb = '⏤͟͟͞͞ＢａｉｌｅｙＢｏｔ-ＭＤ'
+global.packname = 'ᥫ᭡Nexusꨄ'
+global.author = 'Eder'
+global.wm = '𓆩Nexus-𝐌𝐃𓆪'
+global.wm2 = '✦NEXUS-𝗯𝗼𝘁-𝗠𝗗✦'
+global.jxtxn = 'EDER'
+global.cb = '⏤͟͟͞͞Nexus-bot-ＭＤ'
 
 global.vs = '1.0.2'
 global.library = 'Baileys'
