@@ -47,15 +47,15 @@ global.yt = 'https://www.youtube.com/@BaileyBotWa'
 global.ig = 'https://www.instagram.com/b.jxtxn17'
 global.md = 'https://github.com/Jxtxn17/BaileyBot-MD'
 global.paypal = '+51929972576'
-global.git = 'https://github.com/Jxtxn17'
+global.git = 'https://github.com/Eder635'
 global.nn = 'https://chat.whatsapp.com/IA4POOxfwFN9iO1e9I2Qns' //Grupo ofc
 global.Curiosity = 'https://chat.whatsapp.com/LCAUbkf5kUz7jSxO6FADMU' //Curiosity OFC
 global.hachiko = 'https://chat.whatsapp.com/LRQdtS7nKt89NBUPWJDjzh' //Hachiko OFC
 global.Lobo = 'https://chat.whatsapp.com/Li46EUQhA5tJqXEENfKPJd' //Lobo OFC
 global.nnn = 'https://chat.whatsapp.com/ENP021x0aR5HWvG1HpvlCo' //Bailey global
-global.channel = 'https://whatsapp.com/channel/0029VaDRDk2CBtxBVex2vB0Y' //BaileyBot-MD
+global.channel = 'https://whatsapp.com/channel/0029VaF00bv4o7qSseKNrQ1n' //BaileyBot-MD
 global.nnnn = 'https://chat.whatsapp.com/KLpYFsitkgzJ15YQxZrBqO' //colaboración multi bots
-global.fgig = '*_BAILEYBOT-MD : BY AXX_*'
+global.fgig = '*_NEXUS-MD : BY EDER_*'
 global.linkSity = [yt, ig, md, paypal, git, nn]
 
 //Raíz
